@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bussiness Card</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(6, 31, 66);
+      }
+      h2 {
+        margin-bottom: -5px;
+        margin-top: -1px;
+      }
+      p {
+        margin-bottom: -5px;
+      }
+      ul {
+        list-style-type: none;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 520px;
+        width: 300px;
+        overflow: hidden;
+        border: 2px solid lightblue;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: rgba(72, 135, 202, 0.8) 0 0 30px 11px;
+        transition: 0.5s ease-in-out;
+        position: relative;
+      }
+      .container:hover {
+        scale: 1.05;
+        background-color: #eef;
+        box-shadow: rgba(72, 189, 202, 0.8) 0 0 90px 33px;
+      }
+      .title {
+        background-color: aquamarine;
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+      .title-text {
+        margin-top: 0px;
+        color: white;
+        font-size: large;
+      }
+      .img-container {
+        margin-left: 5px;
+        margin-top: 5px;
+      }
+      .img {
+        max-width: 290px;
+        border-radius: 15px;
+      }
+      .details {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .second-text {
+        color: grey;
+        margin-top: 10px;
+      }
+      .links {
+        margin-top: 20px;
+      }
+      .links a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: aqua;
+        transition: 0.2s ease-in-out;
+      }
+      .links a:hover {
+        color: blueviolet;
+      }
+
+      .overlay{
+        top: 37px;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0);
+        height: 0%;
+        width: 290px;
+        backdrop-filter: blur(0px);
+        transition: 0.5s ease-in-out;
+        overflow: hidden;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        text-align: center;
+      }
+      .container:hover .overlay{
+        background-color: rgba(237, 237, 237, 0.461);
+        backdrop-filter: blur(8px);
+        height: 85%;
+      }
+      .skill-title{
+        margin-top: 40%;
+      }
+      .skill-list{
+        text-align: left;
+        font-size: larger;
+        list-style-type: circle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <p class="title-text">Bussiness Card</p>
+      </div>
+      <div class="overlay">
+          <h1 class="skill-title">My Skills</h1>
+          <ul class="skill-list">
+            <li>React Js</li>
+            <li>React Native</li>
+            <li>Swift</li>
+            <li>Next Js</li>
+            <li>Python</li>
+            <li>Spring Boot</li>
+
+          </ul>
+      </div>
+      <div class="img-container">
+        <img src="./pic.png" alt="" class="img" />
+      </div>
+      <div class="details">
+        <h2>Sithija Karunasena</h2>
+        <p class="second-text">Web and Mobile Developer</p>
+        <p>Email - zijja3d@gmail.com</p>
+        <p>Phone - (123) 456 789</p>
+        <p>Address - 123, Main st. NYC</p>
+      </div>
+      <ul class="links-list">
+        <li class="links">
+          <a href="https://www.linkedin.com/in/sithija-lakshan-b59669220?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="links">LinkedIn</a>
+          <a href="https://www.instagram.com/zzzithija" class="links">Instagram</a>
+          <a href="https://github.com/sithikaru" class="links">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
